@@ -6,6 +6,9 @@
     "engines": {
         "node": "10.x.x"
     },
+    "now": {
+        "dotenv": true
+    },
     "scripts": {
         "start": "node ./app/index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
