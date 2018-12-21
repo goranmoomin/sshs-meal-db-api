@@ -29,6 +29,6 @@ module.exports = async ctx => {
 
     ctx.body = {
         status: "success",
-        message: data.find(o => o.date === date.getDate())
+        message: data.find(o => o.date == date.getDate())
     };
 };
