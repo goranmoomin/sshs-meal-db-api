@@ -1,4 +1,10 @@
-require("dotenv").config();
+const dotenv = require("dotenv");
+const path = require("path");
+
+dotenv.config({
+    path: path.join(__dirname, "../.env")
+});
+
 const Koa = require("koa");
 const responseTime = require("koa-response-time");
 const router = require("./route/index.js");
