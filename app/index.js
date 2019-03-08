@@ -12,7 +12,7 @@ const cors = require("koa-cors");
 const middleware = require("./middleware/index.js");
 
 const app = new Koa();
-const PORT = 8888;
+const PORT = process.env.PORT || 8000;
 
 app.use(responseTime()).use(cors()).use(middleware.mongoClientAsContext).use(async (ctx, next) => {
     await next();
